@@ -27,14 +27,15 @@ function Footer() {
                     <div className="landing-footer-item-wrap">
                         <p className="landing-footer-item-title">Total Staked</p>
                         <p className="landing-footer-item-value">
-                            {isAppLoading ? (
+                            {/*isAppLoading ? (
                                 <Skeleton width="180px" />
                             ) : (
                                 new Intl.NumberFormat("en-US", {
                                     maximumFractionDigits: 0,
                                     minimumFractionDigits: 0,
                                 }).format(circSupply)
-                            )}
+                            )*/}
+                            -
                         </p>
                     </div>
                 </Grid>
@@ -42,7 +43,7 @@ function Footer() {
                     <div className="landing-footer-item-wrap">
                         <p className="landing-footer-item-title">Treasury Balance</p>
                         <p className="landing-footer-item-value">
-                            {isAppLoading ? (
+                            {/*isAppLoading ? (
                                 <Skeleton width="180px" />
                             ) : (
                                 new Intl.NumberFormat("en-US", {
@@ -51,7 +52,8 @@ function Footer() {
                                     maximumFractionDigits: 0,
                                     minimumFractionDigits: 0,
                                 }).format(treasuryBalance)
-                            )}
+                            )*/}
+                            -
                         </p>
                     </div>
                 </Grid>
@@ -59,7 +61,7 @@ function Footer() {
                     <div className="landing-footer-item-wrap">
                         <p className="landing-footer-item-title">Current APY</p>
                         <p className="landing-footer-item-value">
-                            {stakingAPY ? <>{new Intl.NumberFormat("en-US").format(Number(trimmedStakingAPY))}%</> : <Skeleton width="150px" />}
+                            {/*stakingAPY ? <>{new Intl.NumberFormat("en-US").format(Number(trimmedStakingAPY))}%</> : <Skeleton width="150px" />*/}-
                         </p>
                     </div>
                 </Grid>
