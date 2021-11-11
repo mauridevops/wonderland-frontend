@@ -39,11 +39,12 @@ function Header() {
                                         <SvgIcon viewBox="0 0 32 32" color="primary" component={Telegram} />
                                         <p>Telegram</p>
                                     </Link>
-                                    <Link className="tooltip-item" href="https://discord.gg/thDHseaHUt" target="_blank">
+                                    */}
+                                    <Link className="tooltip-item" href="https://discord.gg/nhH9C7JvCc" target="_blank">
                                         <SvgIcon color="primary" component={Discord} />
                                         <p>Discord</p>
                                     </Link>
-                                    */}
+                                    
                                 </div>
                             </Fade>
                         )}
