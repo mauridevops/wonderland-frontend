@@ -44,7 +44,6 @@ function Header() {
                                         <SvgIcon color="primary" component={Discord} />
                                         <p>Discord</p>
                                     </Link>
-                                    
                                 </div>
                             </Fade>
                         )}
