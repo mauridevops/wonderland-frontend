@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "@material-ui/core";
 import "./main.scss";
-import DoveImg from "../../../../assets/icons/flying_dove.png";
+import DoveImg from "../../../../assets/icons/logo_dark.png";
 
 function Main() {
     return (
@@ -15,7 +15,7 @@ function Main() {
                         <p>Launching soon</p>
                     </div>
                 </Link>
-                <Link href="https://dovefinance.gitbook.io/dovefinance/" target="_blank" rel="noreferrer">
+                <Link href="https://docs.dovedao.finance/" target="_blank" rel="noreferrer">
                     <div className="landing-main-btn">
                         <p>Documentation</p>
                     </div>

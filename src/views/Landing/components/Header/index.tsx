@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./header.scss";
-import { ReactComponent as WonderlandIcon } from "../../../../assets/icons/wonderland-icon.svg";
+import DoveIcon from "../../../../assets/icons/logo_header.png";
 import { SvgIcon, Link, Box, Popper, Fade } from "@material-ui/core";
 import { ReactComponent as GitHub } from "../../../../assets/icons/github.svg";
 import { ReactComponent as Twitter } from "../../../../assets/icons/twitter.svg";
@@ -18,7 +18,7 @@ function Header() {
 
     return (
         <div className="landing-header">
-            <h1 className="landing-header-textlogo">Dove Finance</h1>
+            <img src={DoveIcon} alt="Dove" style={{ minWidth: 174, minHeight: 40 }} />
             <div className="landing-header-nav-wrap">
                 <Box component="div" onMouseEnter={e => handleClick(e)} onMouseLeave={e => handleClick(e)}>
                     <p className="landing-header-nav-text">Social</p>
@@ -26,7 +26,7 @@ function Header() {
                         {({ TransitionProps }) => (
                             <Fade {...TransitionProps} timeout={200}>
                                 <div className="tooltip">
-                                    <Link className="tooltip-item" href="https://github.com/dove-finance/wonderland-frontend" target="_blank">
+                                    <Link className="tooltip-item" href="https://github.com/dove-finance" target="_blank">
                                         <SvgIcon color="primary" component={GitHub} />
                                         <p>GitHub</p>
                                     </Link>
@@ -34,13 +34,7 @@ function Header() {
                                         <SvgIcon color="primary" component={Twitter} />
                                         <p>Twitter</p>
                                     </Link>
-                                    {/*
-                                    <Link className="tooltip-item" href="https://t.me/joinchat/6UybL5rJMEhjN2Y5" target="_blank">
-                                        <SvgIcon viewBox="0 0 32 32" color="primary" component={Telegram} />
-                                        <p>Telegram</p>
-                                    </Link>
-                                    */}
-                                    <Link className="tooltip-item" href="https://discord.gg/nhH9C7JvCc" target="_blank">
+                                    <Link className="tooltip-item" href="https://discord.gg/dovefinance" target="_blank">
                                         <SvgIcon color="primary" component={Discord} />
                                         <p>Discord</p>
                                     </Link>
