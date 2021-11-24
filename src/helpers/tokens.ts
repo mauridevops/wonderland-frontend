@@ -1,4 +1,4 @@
-import AvaxIcon from "../assets/tokens/AVAX.svg";
+import TcroIcon from "../assets/tokens/TCRO.svg";
 import AaveIcon from "../assets/tokens/AAVE.e.png";
 import ApeXIcon from "../assets/tokens/Ape-X.png";
 import ApeinIcon from "../assets/tokens/APEIN.png";
@@ -40,7 +40,7 @@ import TsdIcon from "../assets/tokens/TSD.png";
 import UsdcEIcon from "../assets/tokens/USDC.e.png";
 import UsdtEIcon from "../assets/tokens/USDT.e.png";
 import VsoIcon from "../assets/tokens/VSO.png";
-import WavaxIcon from "../assets/tokens/WAVAX.png";
+import WtcroIcon from "../assets/tokens/WTCRO.png";
 import WBtcIcon from "../assets/tokens/WBTC.e.png";
 import WetIcon from "../assets/tokens/WET.png";
 import WethEIcon from "../assets/tokens/WETH.e.png";
@@ -51,14 +51,14 @@ export interface IToken {
     name: string;
     address: string;
     img: string;
-    isAvax?: boolean;
+    isTcro?: boolean;
     decimals: number;
 }
 
-export const avax: IToken = {
-    name: "AVAX",
-    isAvax: true,
-    img: AvaxIcon,
+export const tcro: IToken = {
+    name: "TCRO",
+    isTcro: true,
+    img: TcroIcon,
     address: "",
     decimals: 18,
 };
@@ -350,10 +350,10 @@ const vso: IToken = {
     decimals: 18,
 };
 
-export const wavax: IToken = {
-    name: "WAVAX",
+export const wtcro: IToken = {
+    name: "WTCRO",
     address: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
-    img: WavaxIcon,
+    img: WtcroIcon,
     decimals: 18,
 };
 
@@ -393,7 +393,7 @@ const yak: IToken = {
 };
 
 export default [
-    avax,
+    tcro,
     aave,
     apeX,
     apein,
@@ -435,7 +435,7 @@ export default [
     usdc,
     usdt,
     vso,
-    wavax,
+    wtcro,
     wbtc,
     wet,
     weth,
