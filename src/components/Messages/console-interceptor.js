@@ -3,7 +3,7 @@ import store from "../../store/store";
 import { messages } from "../../constants/messages";
 
 // List of error messages we wish to intercept
-const interceptedConsoleMessages = ["Wrong network, please switch to mainnet"];
+const interceptedConsoleMessages = ["Wrong network, please switch to testnet"];
 
 // Intercepts an error sent to console and dispatches it to the message framework.
 var consoleInterceptor = function (message) {
