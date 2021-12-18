@@ -1,5 +1,5 @@
 import AvaxIcon from "../assets/tokens/AVAX.svg";
-import AaveIcon from "../assets/tokens/AAVE.e.png";
+import AaveIcon from "../assets/tokens/EURO.png";
 import ApeXIcon from "../assets/tokens/Ape-X.png";
 import ApeinIcon from "../assets/tokens/APEIN.png";
 import BifiIcon from "../assets/tokens/BIFI.png";
@@ -64,7 +64,7 @@ export const avax: IToken = {
 };
 
 const aave: IToken = {
-    name: "AAVE.e",
+    name: "EURO",
     address: "0xd61156e6fd5f4997d23b58d45d0aac993e731df7", //"0x63a72806098Bd3D9520cC43356dD78afe5D386D9" test DA RIGUARDARE
     img: AaveIcon,
     decimals: 2,
