@@ -103,7 +103,7 @@ function Stake() {
                     <Grid className="stake-card-grid" container direction="column" spacing={2}>
                         <Grid item>
                             <div className="stake-card-header">
-                                <p className="stake-card-header-title">TIME Staking (🎩, 🎩)</p>
+                                <p className="stake-card-header-title">SHELL Staking (🎩, 🎩)</p>
                                 <RebaseTimer />
                             </div>
                         </Grid>
@@ -240,7 +240,7 @@ function Stake() {
                                         </div>
 
                                         <div className="stake-card-action-help-text">
-                                            {address && ((!hasAllowance("time") && view === 0) || (!hasAllowance("memo") && view === 1)) && (
+                                            {address && ((!hasAllowance("Shell") && view === 0) || (!hasAllowance("Shell") && view === 1)) && (
                                                 <p>
                                                     Note: The "Approve" transaction is only needed when staking/unstaking for the first time; subsequent staking/unstaking only
                                                     requires you to perform the "Stake" or "Unstake" transaction.
@@ -252,17 +252,17 @@ function Stake() {
                                     <div className="stake-user-data">
                                         <div className="data-row">
                                             <p className="data-row-name">Your Balance</p>
-                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{trim(Number(timeBalance), 4)} TIME</>}</p>
+                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{trim(Number(timeBalance), 4)} SHELL</>}</p>
                                         </div>
 
                                         <div className="data-row">
                                             <p className="data-row-name">Your Staked Balance</p>
-                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{trimmedMemoBalance} MEMO</>}</p>
+                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{trimmedMemoBalance} S-SHELL</>}</p>
                                         </div>
 
                                         <div className="data-row">
                                             <p className="data-row-name">Next Reward Amount</p>
-                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{nextRewardValue} MEMO</>}</p>
+                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{nextRewardValue} S-SHELL</>}</p>
                                         </div>
 
                                         <div className="data-row">
