@@ -56,7 +56,7 @@ export interface IToken {
 }
 
 export const avax: IToken = {
-    name: "AVAX",
+    name: "MATIC",
     isAvax: true,
     img: AvaxIcon,
     address: "",
@@ -65,9 +65,9 @@ export const avax: IToken = {
 
 const aave: IToken = {
     name: "AAVE.e",
-    address: "0x63a72806098Bd3D9520cC43356dD78afe5D386D9",
+    address: "0xd61156e6fd5f4997d23b58d45d0aac993e731df7", //"0x63a72806098Bd3D9520cC43356dD78afe5D386D9" test DA RIGUARDARE
     img: AaveIcon,
-    decimals: 18,
+    decimals: 2,
 };
 
 const apeX: IToken = {
