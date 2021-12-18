@@ -3,7 +3,7 @@ import { Networks } from "../constants/blockchain";
 const switchRequest = () => {
     return window.ethereum.request({
         method: "wallet_switchEthereumChain",
-        params: [{ chainId: "0xa86a" }],
+        params: [{ chainId: "0x13881" }],
     });
 };
 
@@ -12,13 +12,13 @@ const addChainRequest = () => {
         method: "wallet_addEthereumChain",
         params: [
             {
-                chainId: "0xa86a",
-                chainName: "Avalanche Mainnet",
-                rpcUrls: ["https://api.avax.network/ext/bc/C/rpc"],
-                blockExplorerUrls: ["https://cchain.explorer.avax.network/"],
+                chainId: "0x13881",
+                chainName: "Polygon Mumbai Testnet",
+                rpcUrls: ["https://polygon-mumbai.infura.io/v3/0f83eb63faea409abc1f440c9f077646"],
+                blockExplorerUrls: ["https://mumbai.polygonscan.com/"],
                 nativeCurrency: {
-                    name: "AVAX",
-                    symbol: "AVAX",
+                    name: "MATIC",
+                    symbol: "MATIC",
                     decimals: 18,
                 },
             },
