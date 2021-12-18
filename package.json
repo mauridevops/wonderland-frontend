@@ -71,6 +71,8 @@
     "start": "react-scripts start",
     "test": "react-scripts test",
     "lint": "npx eslint src/ --ext .ts,.js,.tsx,.jsx",
-    "lint-fix": "npx eslint src/ --ext .ts,.js,.tsx,.jsx --fix"
+    "lint-fix": "npx eslint src/ --ext .ts,.js,.tsx,.jsx --fix",
+    "winBuild": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build"
+
   }
 }
