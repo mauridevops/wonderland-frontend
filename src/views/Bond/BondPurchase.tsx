@@ -120,7 +120,7 @@ function BondPurchase({ bond, slippage }: IBondPurchaseProps) {
         setZapinOpen(false);
     };
 
-    const displayUnits = useAvax ? "MATIC" : bond.displayUnits;
+    const displayUnits = useAvax ? "AVAX" : bond.displayUnits;
 
     return (
         <Box display="flex" flexDirection="column">
@@ -202,12 +202,12 @@ function BondPurchase({ bond, slippage }: IBondPurchaseProps) {
 
                     <div className="data-row">
                         <p className="bond-balance-title">You Will Get</p>
-                        <p className="price-data bond-balance-title">{isBondLoading ? <Skeleton width="100px" /> : `${trim(bond.bondQuote, 4)} TIME`}</p>
+                        <p className="price-data bond-balance-title">{isBondLoading ? <Skeleton width="100px" /> : `${trim(bond.bondQuote, 4)} S-SHELL`}</p>
                     </div>
 
                     <div className={`data-row`}>
                         <p className="bond-balance-title">Max You Can Buy</p>
-                        <p className="price-data bond-balance-title">{isBondLoading ? <Skeleton width="100px" /> : `${trim(bond.maxBondPrice, 4)} TIME`}</p>
+                        <p className="price-data bond-balance-title">{isBondLoading ? <Skeleton width="100px" /> : `${trim(bond.maxBondPrice, 4)} SHELL`}</p>
                     </div>
 
                     <div className="data-row">
@@ -222,7 +222,7 @@ function BondPurchase({ bond, slippage }: IBondPurchaseProps) {
 
                     <div className="data-row">
                         <p className="bond-balance-title">Minimum purchase</p>
-                        <p className="bond-balance-title">0.01 TIME</p>
+                        <p className="bond-balance-title">0.01 SHELL</p>
                     </div>
                 </Box>
             </Slide>
