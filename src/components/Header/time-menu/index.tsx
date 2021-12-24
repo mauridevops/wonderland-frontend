@@ -59,7 +59,7 @@ function TimeMenu() {
                     <Fade {...TransitionProps} timeout={200}>
                         <div className="tooltip">
                             <Link className="tooltip-item" href={`https://www.traderjoexyz.com/#/trade?inputCurrency=&outputCurrency=${TIME_ADDRESS}`} target="_blank">
-                                <p>Buy on Trader Joe</p>
+                                <p>Buy on SushiSwap</p>
                             </Link>
 
                             {isEthereumAPIAvailable && (
@@ -68,7 +68,7 @@ function TimeMenu() {
                                     <p className="add-tokens-title">ADD TOKEN TO WALLET</p>
                                     <div className="divider" />
                                     <div className="tooltip-item" onClick={addTokenToWallet("TIME", TIME_ADDRESS)}>
-                                        <p>TIME</p>
+                                        <p>TEST</p>
                                     </div>
                                     <div className="tooltip-item" onClick={addTokenToWallet("MEMO", MEMO_ADDRESS)}>
                                         <p>MEMO</p>

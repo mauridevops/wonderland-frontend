@@ -79,8 +79,8 @@ function Stake() {
 
     const hasAllowance = useCallback(
         token => {
-            if (token === "Shellttt") return stakeAllowance > 0;
-            if (token === "s-Shellttt") return unstakeAllowance > 0;
+            if (token === "test") return stakeAllowance > 0;
+            if (token === "memo") return unstakeAllowance > 0;
             return 0;
         },
         [stakeAllowance],
@@ -103,7 +103,7 @@ function Stake() {
                     <Grid className="stake-card-grid" container direction="column" spacing={2}>
                         <Grid item>
                             <div className="stake-card-header">
-                                <p className="stake-card-header-title">SHELL Staking (🎩, 🎩)</p>
+                                <p className="stake-card-header-title">TEST Staking (🎩, 🎩)</p>
                                 <RebaseTimer />
                             </div>
                         </Grid>
@@ -141,7 +141,7 @@ function Stake() {
                                     <Grid item xs={6} sm={4} md={4} lg={4}>
                                         <div className="stake-card-index">
                                             <p className="stake-card-metrics-title">Current Index</p>
-                                            <p className="stake-card-metrics-value">{currentIndex ? <>{trim(Number(currentIndex), 2)} SHELL</> : <Skeleton width="150px" />}</p>
+                                            <p className="stake-card-metrics-value">{currentIndex ? <>{trim(Number(currentIndex), 2)} TEST</> : <Skeleton width="150px" />}</p>
                                         </div>
                                     </Grid>
                                 </Grid>
@@ -154,7 +154,7 @@ function Stake() {
                                     <div className="stake-card-wallet-connect-btn" onClick={connect}>
                                         <p>Connect Wallet</p>
                                     </div>
-                                    <p className="stake-card-wallet-desc-text">Connect your wallet to stake SHELL tokens!</p>
+                                    <p className="stake-card-wallet-desc-text">Connect your wallet to stake TEST tokens!</p>
                                 </div>
                             )}
                             {address && (
@@ -252,17 +252,17 @@ function Stake() {
                                     <div className="stake-user-data">
                                         <div className="data-row">
                                             <p className="data-row-name">Your Balance</p>
-                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{trim(Number(timeBalance), 4)} Shellttt</>}</p>
+                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{trim(Number(timeBalance), 4)} test</>}</p>
                                         </div>
 
                                         <div className="data-row">
                                             <p className="data-row-name">Your Staked Balance</p>
-                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{trimmedMemoBalance} S-Shellttt</>}</p>
+                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{trimmedMemoBalance} memo</>}</p>
                                         </div>
 
                                         <div className="data-row">
                                             <p className="data-row-name">Next Reward Amount</p>
-                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{nextRewardValue} S-Shellttt</>}</p>
+                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{nextRewardValue} memo</>}</p>
                                         </div>
 
                                         <div className="data-row">
