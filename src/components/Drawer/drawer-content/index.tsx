@@ -3,7 +3,7 @@ import { NavLink, Link as RouterLink } from "react-router-dom";
 import Social from "./social";
 import { ReactComponent as StakeIcon } from "../../../assets/icons/stake.svg";
 import { ReactComponent as BondIcon } from "../../../assets/icons/bond.svg";
-import TridentIcon from "../../../assets/icons/trident-nav-header2.svg";
+import TridentIcon from "../../../assets/icons/headerlogo.png";
 import { ReactComponent as DashboardIcon } from "../../../assets/icons/dashboard.svg";
 import { ReactComponent as DocsIcon } from "../../../assets/icons/docs.svg";
 import { trim, shorten } from "../../../helpers";
@@ -91,12 +91,12 @@ function NavContent() {
                     >
                         <div className="dapp-menu-item">
                             <SvgIcon component={BondIcon} />
-                            <p>Mint</p>
+                            <p>Bond</p>
                         </div>
                     </Link>
 
                     <div className="bond-discounts">
-                        <p className="bond-discounts--title">Mint discounts</p>
+                        <p className="bond-discounts--title">Bond discounts</p>
                         {bonds.map((bond, i) => (
                             <Link component={NavLink} to={`/mints/${bond.name}`} key={i} className={"bond"}>
                                 {!bond.bondDiscount ? (
@@ -111,6 +111,12 @@ function NavContent() {
                         ))}
                     </div>
                 </div>
+            </div>
+            <div className="dapp-menu-doc-link">
+                <Link href="https://trident.gitbook.io/trident/" target="_blank">
+                    <SvgIcon component={DocsIcon} />
+                    <p>Governance</p>
+                </Link>
             </div>
             <div className="dapp-menu-doc-link">
                 <Link href="https://trident.gitbook.io/trident/" target="_blank">
