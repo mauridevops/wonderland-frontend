@@ -53,7 +53,7 @@ function PsiMenu() {
     return (
         <div className="psi-menu-root" onMouseEnter={e => handleClick(e)} onMouseLeave={e => handleClick(e)}>
             <div className="psi-menu-btn">
-                <p>PSI</p>
+                <p>FTL Token Menu</p>
             </div>
 
             <Popper className="psi-menu-popper" open={open} anchorEl={anchorEl} transition>
@@ -70,10 +70,10 @@ function PsiMenu() {
                                     <p className="add-tokens-title">Add token to wallet</p>
                                     {/* <div className="divider" /> */}
                                     <div className="tooltip-item" onClick={addTokenToWallet("PSI", PSI_ADDRESS)}>
-                                        <p>PSI</p>
+                                        <p>FTL</p>
                                     </div>
                                     <div className="tooltip-item" onClick={addTokenToWallet("SPSI", SPSI_ADDRESS)}>
-                                        <p>SPSI</p>
+                                        <p>sFTL</p>
                                     </div>
                                 </div>
                             )}
