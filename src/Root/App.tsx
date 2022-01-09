@@ -108,6 +108,7 @@ function App() {
         <ViewBase>
             <Switch>
                 <Route exact path="/">
+                <Redirect to="/stake" />
                     <Home />
                 </Route>
 
