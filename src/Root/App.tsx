@@ -107,10 +107,7 @@ function App() {
     return (
         <ViewBase>
             <Switch>
-                <Route exact path="/">
-                    <Landing />
-                </Route>
-                
+
                 <Route exact path="/dashboard">
                     <Dashboard />
                 </Route>
