@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     appBar: {
         [theme.breakpoints.up("sm")]: {
             width: "100%",
-            padding: "20px 0 30px 0",
+            padding: "20px 0 0px 0",
         },
         justifyContent: "flex-end",
         alignItems: "flex-end",
