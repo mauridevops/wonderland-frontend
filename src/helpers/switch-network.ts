@@ -3,7 +3,7 @@ import { Networks } from "../constants/blockchain";
 const switchRequest = () => {
     return window.ethereum.request({
         method: "wallet_switchEthereumChain",
-        params: [{ chainId: "0x63564C40" }],
+        params: [{ chainId: "0x61" }],
     });
 };
 
@@ -12,13 +12,13 @@ const addChainRequest = () => {
         method: "wallet_addEthereumChain",
         params: [
             {
-                chainId: "0x63564C40",
-                chainName: "Harmony Mainnet",
-                rpcUrls: ["https://api.harmony.one"],
-                blockExplorerUrls: ["https://explorer.harmony.one"],
+                chainId: "0x61",
+                chainName: "Binance Smart Chain TESTNET",
+                rpcUrls: ["https://speedy-nodes-nyc.moralis.io/2eef56c887b28c484654dbb1/bsc/testnet"],
+                blockExplorerUrls: ["https://testnet.bscscan.com"],
                 nativeCurrency: {
-                    name: "ONE",
-                    symbol: "ONE",
+                    name: "BNB",
+                    symbol: "BNB",
                     decimals: 18,
                 },
             },
