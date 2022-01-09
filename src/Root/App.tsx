@@ -110,13 +110,12 @@ function App() {
                 <Route exact path="/">
                     <Home />
                 </Route>
+
                 <Route exact path="/dashboard">
                     <Dashboard />
                 </Route>
-              {/* <Route exact path="/">
-                <Redirect to="/home" />
-              </Route> */}
-               <Route path="/stake">
+
+                <Route path="/stake">
                     <Stake />
                 </Route>
 
