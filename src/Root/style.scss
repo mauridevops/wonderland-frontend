@@ -62,6 +62,8 @@ p {
                     font-size: 24px;
                     text-align: center;
                     color: #ffffff;
+                    text-transform: uppercase;
+
                 }
 
                 .web3modal-provider-description {
@@ -70,6 +72,8 @@ p {
                     font-size: 14px;
                     text-align: center;
                     color: rgba(255, 255, 255, 0.6);
+                    text-transform: uppercase;
+
                 }
             }
         }
@@ -106,6 +110,8 @@ p {
                 font-weight: 600;
                 font-size: 20px;
                 color: #ffffff;
+                text-transform: uppercase;
+
             }
 
             .walletconnect-modal__close__wrapper {
@@ -140,6 +146,7 @@ p {
                 font-weight: 600;
                 font-size: 18px;
                 color: #ffffff;
+                text-transform: uppercase;
                 cursor: pointer;
 
                 &:last-child {
@@ -167,6 +174,8 @@ p {
             font-size: 14px;
             text-align: center;
             color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
+
         }
 
         .walletconnect-qrcode__image {
@@ -180,6 +189,7 @@ p {
             font-weight: 300;
             font-size: 14px;
             text-align: center;
+            text-transform: uppercase;
             color: rgba(255, 255, 255, 0.6);
         }
 
@@ -190,6 +200,7 @@ p {
                 font-weight: 600;
                 font-size: 20px;
                 color: #ffffff;
+                text-transform: uppercase;
             }
         }
     }

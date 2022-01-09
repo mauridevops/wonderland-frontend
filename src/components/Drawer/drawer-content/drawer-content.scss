@@ -55,6 +55,8 @@
                         color: theme.$inactive-nav-text;
                         font-family: Cinzel;
                         margin-left: 0.5rem;
+                        text-transform: uppercase;
+
                     }
                 }
 
@@ -68,6 +70,8 @@
                             color: theme.$active-nav-text;
                             text-decoration: none;
                             font-family: Cinzel SemiBold;
+                            text-transform: uppercase;
+
                         }
                     }
                 }
@@ -88,6 +92,8 @@
                     font-family: Cinzel Medium;
                     font-size: 0.75rem;
                     color: theme.$white;
+                    text-transform: uppercase;
+
                 }
 
                 .bond {
@@ -122,6 +128,8 @@
                 color: theme.$inactive-nav-text;
                 font-family: Cinzel;
                 margin-left: 0.5rem;
+                text-transform: uppercase;
+
             }
         }
     }
