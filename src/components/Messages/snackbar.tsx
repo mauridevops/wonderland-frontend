@@ -91,6 +91,7 @@ const useStyles = makeStyles(theme => ({
         borderRadius: 5,
     },
 }));
+/** */
 
 const SnackMessage = forwardRef<HTMLDivElement, { id: string | number; message: Message }>((props, ref) => {
     const classes = useStyles();
