@@ -107,15 +107,16 @@ function App() {
     return (
         <ViewBase>
             <Switch>
+                <Route exact path="/">
+                    <Home />
+                </Route>
                 <Route exact path="/dashboard">
                     <Dashboard />
                 </Route>
-
-                <Route exact path="/">
-                    <Redirect to="/stake" />
-                </Route>
-
-                <Route path="/stake">
+              {/* <Route exact path="/">
+                <Redirect to="/home" />
+              </Route> */}
+               <Route path="/stake">
                     <Stake />
                 </Route>
 
