@@ -24,6 +24,7 @@
                 font-family: Cinzel Bold;
                 font-weight: bold;
                 font-size: 20px;
+                text-transform: uppercase;
                 color: #ffffff;
             }
         }
@@ -35,6 +36,7 @@
                 font-family: Cinzel Medium;
                 font-weight: 500;
                 font-size: 20px;
+                text-transform: uppercase;
                 line-height: 24px;
                 color: rgba(255, 255, 255, 0.6);
             }
@@ -45,6 +47,7 @@
                 font-size: 24px;
                 line-height: 29px;
                 color: #ffffff;
+                text-transform: uppercase;
                 display: flex;
                 align-items: center;
                 flex-direction: column;
@@ -54,10 +57,11 @@
         .choose-bond-view-card-table {
             .choose-bond-view-card-table-title {
                 font-family: Cinzel SemiBold;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 14px;
                 line-height: 17px;
                 color: #ffffff;
+                text-transform: uppercase;
             }
         }
     }
@@ -122,8 +126,9 @@
 
     .bond-name-title {
         font-family: Cinzel SemiBold;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 14px;
+        text-transform: uppercase;
         color: #ffffff;
     }
 
