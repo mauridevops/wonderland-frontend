@@ -1,3 +1,3 @@
 export const getMainnetURI = (): string => {
-    return "https://api.s0.t.hmny.io/";
+    return "https://speedy-nodes-nyc.moralis.io/2eef56c887b28c484654dbb1/bsc/testnet";
 };

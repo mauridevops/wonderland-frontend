@@ -160,11 +160,11 @@ export const calcBondDetails = createAsyncThunk("bonding/calcBondDetails", async
         purchased = (markdown / Math.pow(10, 18)) * (purchased / Math.pow(10, 9));
     } else if (bond.name === frax.name) {
         purchased = purchased / Math.pow(10, 18);
-        const fraxPrice = getTokenPrice("FRAX");
+        const fraxPrice = getTokenPrice("USDT"); // me
         purchased = purchased * fraxPrice;
     } else if (bond.name === ust.name) {
         purchased = purchased / Math.pow(10, 18);
-        const ustPrice = getTokenPrice("UST");
+        const ustPrice = getTokenPrice("BUSD");  // me
         purchased = purchased * ustPrice;
     } else {
         purchased = purchased / Math.pow(10, 18);
