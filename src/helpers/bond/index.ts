@@ -26,30 +26,30 @@ export const mim = new StableBond({
 
 export const ust = new StableBond({
     name: "ust",
-    displayName: "UST",
-    bondToken: "UST",
+    displayName: "BUSD",
+    bondToken: "BUSD",
     bondIconSvg: UstIcon,
     bondContractABI: StableBondContract,
     reserveContractAbi: StableReserveContract,
     networkAddrs: {
         [Networks.ONE]: {
             bondAddress: "0x694738E0A438d90487b4a549b201142c1a97B556", // TODO - need this
-            reserveAddress: "0x224e64ec1bdce3870a6a6c777edd450454068fec", // TODO - need this
+            reserveAddress: "0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7", // BUSD - CONTRACT ADDRESS
         },
     },
 });
 
 export const frax = new StableBond({
     name: "frax",
-    displayName: "FRAX",
-    bondToken: "FRAX",
+    displayName: "USDT",
+    bondToken: "USDT",
     bondIconSvg: FraxIcon,
     bondContractABI: StableBondContract,
     reserveContractAbi: StableReserveContract,
     networkAddrs: {
         [Networks.ONE]: {
-            bondAddress: "0x312418e484CE93851a5712A5CDd6bEe303080A67",
-            reserveAddress: "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7", // TODO - need this
+            bondAddress: "0x312418e484CE93851a5712A5CDd6bEe303080A67", // TO DO BSC
+            reserveAddress: "0x7ef95a0FEE0Dd31b22626fA2e10Ee6A223F8a684", // USDT CONTRACT ADDRESS
         },
     },
 });
@@ -57,18 +57,18 @@ export const frax = new StableBond({
 // todo - rename
 export const mimPsi = new LPBond({
     name: "mim_psi_lp",
-    displayName: "PSI-MIM LP",
-    bondToken: "MIM",
+    displayName: "FTL-BUSD LP",
+    bondToken: "BUSD",
     bondIconSvg: MimIcon,
     bondContractABI: LpBondContract,
     reserveContractAbi: LpReserveContract,
     networkAddrs: {
         [Networks.ONE]: {
-            bondAddress: "0x19513619465B1331A3e4750a99310182426E9071",
-            reserveAddress: "0x113f413371fc4cc4c9d6416cf1de9dfd7bf747df", // TODO - change
+            bondAddress: "0x19513619465B1331A3e4750a99310182426E9071", //TODO
+            reserveAddress: "0xD77Cf09d693ea7b40Da0b83B31C60D43A90C63C1", // BUSD/DESTINY LP CONTRACT ADDRESS
         },
     },
-    lpUrl: "https://www.traderjoexyz.com/#/pool/0x130966628846BFd36ff31a822705796e8cb8C18D/0xb54f16fB19478766A268F172C9480f8da1a7c9C3",
+    lpUrl: "https://pancake.kiemtienonline360.com/#/add/0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7/0xBE02E32139a20d86833C99554a1F62bE3d1Ecc02",
 });
 
 export default [ust, frax];
