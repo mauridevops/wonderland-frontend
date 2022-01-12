@@ -6,7 +6,7 @@ const switchRequest = () => {
         params: [{ chainId: "0x61" }],
     });
 };
-
+/** */
 const addChainRequest = () => {
     return window.ethereum.request({
         method: "wallet_addEthereumChain",
